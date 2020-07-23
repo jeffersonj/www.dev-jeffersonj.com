@@ -1,0 +1,44 @@
+// COLOR VARIABLES
+$color-primary: #1C1C1C;
+$color-secondary: #F2F2F2;
+$color-terciary: #373737;
+
+
+// FONT VARIABLES
+$font-primary: 'Mulish', sans-serif;
+$color-font-1: #1C1C1C;
+$color-font-2: #F2F2F2;
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;    //inherited from HTML
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;   // 10px/16 = 62.5% -> 1rem = 10px
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-primary;
+    font-weight: 300;
+    line-height: 1.6;
+    //background-color: $color-primary;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 18vh    //for header navigation
+                        73vh    //for about
+                        10vh    //for social
+                        100vh    //for story
+                        repeat(3, min-content); //for education, expertisies and portfolio
+    
+    grid-template-columns:  [full-start] 17rem [center-start] //filling the initial space in the viewport width
+                            repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
+                            [center-end] 17rem [full-end]; //filling the rest in the end of viewport width
+}
