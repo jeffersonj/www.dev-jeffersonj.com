@@ -1,0 +1,22 @@
+.story{
+    background-color: #c2c2c2;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem;
+
+    display: grid;
+    grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem;
+
+    &__content{
+            background-color: rgb(221, 221, 221);
+            grid-column: 2 / span 1;
+    }
+
+    &__photo{
+        background-color: rgb(182, 182, 182);
+        grid-column: 3 / span 1;
+    }
+
+    
+}

@@ -73,3 +73,49 @@ body {
   background-color: #fff;
   grid-column: 2 / span 2;
   height: .15rem; }
+
+.about {
+  grid-column: full-start / full-end;
+  background-color: #1C1C1C;
+  display: grid;
+  grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem; }
+  .about__photo {
+    background-color: #b6b6b6;
+    grid-column: 2 / span 1; }
+  .about__content {
+    background-color: #dddddd;
+    grid-column: 3 / span 1; }
+
+.story {
+  background-color: #c2c2c2;
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem;
+  display: grid;
+  grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem; }
+  .story__content {
+    background-color: #dddddd;
+    grid-column: 2 / span 1; }
+  .story__photo {
+    background-color: #b6b6b6;
+    grid-column: 3 / span 1; }
+
+.education {
+  background-color: palegoldenrod;
+  grid-column: center-start / center-end; }
+
+.skills {
+  background-color: #ccaeae;
+  grid-column: center-start / center-end; }
+
+.portfolio {
+  background-color: #747474;
+  grid-column: center-start / center-end; }
+
+.contact {
+  background-color: lightgray;
+  grid-column: center-start / center-end; }
+
+.footer {
+  background-color: #e7e7e7;
+  grid-column: center-start / center-end; }
