@@ -86,6 +86,61 @@ body {
     background-color: #dddddd;
     grid-column: 3 / span 1; }
 
+.social {
+  grid-column: full-start / full-end;
+  background-color: #1C1C1C;
+  color: #1C1C1C;
+  display: grid;
+  grid-template-columns: 17rem repeat(1, minmax(25rem, 1fr)) 17rem; }
+  .social__list {
+    background-color: #1C1C1C;
+    grid-column: 2 / span 1;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transition: all .1s ease-out; }
+  .social__link {
+    outline: none; }
+    .social__link-linkedin {
+      color: #2d76b0; }
+    .social__link-github {
+      color: #000; }
+    .social__link-instagram {
+      color: #9a2970; }
+    .social__link-dribbble {
+      color: #b53561; }
+    .social__link > svg {
+      width: 5rem;
+      height: 5rem; }
+      .social__link > svg .social__group-icon {
+        fill: #F2F2F2;
+        transition: all .2s; }
+      .social__link > svg .social__group__inner-circle {
+        fill: transparent;
+        transition: all .2s; }
+      .social__link > svg .social__group-outline {
+        stroke: #F2F2F2;
+        transform-origin: 50% 50%;
+        transition: all .2s; }
+      .social__link > svg:hover, .social__link > svg:active, .social__link > svg:focus {
+        cursor: pointer; }
+        .social__link > svg:hover .social__group-icon, .social__link > svg:active .social__group-icon, .social__link > svg:focus .social__group-icon {
+          fill: #FFFBFA;
+          transition: all .45s; }
+        .social__link > svg:hover .social__group__inner-circle, .social__link > svg:active .social__group__inner-circle, .social__link > svg:focus .social__group__inner-circle {
+          fill: currentColor;
+          transition: all .45s; }
+          .social__link > svg:hover .social__group__inner-circle-instagram, .social__link > svg:active .social__group__inner-circle-instagram, .social__link > svg:focus .social__group__inner-circle-instagram {
+            fill: url(#simpleInsta) !important; }
+        .social__link > svg:hover .social__group-outline, .social__link > svg:active .social__group-outline, .social__link > svg:focus .social__group-outline {
+          stroke: currentColor;
+          transform: scale(1.1);
+          transition: all .45s; }
+
 .story {
   background-color: #c2c2c2;
   grid-column: full-start / full-end;
