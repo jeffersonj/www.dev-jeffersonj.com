@@ -5,6 +5,14 @@
     display: grid;
     //turning on this column full-responsive without media-queries
     grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem;
+
+    &::after{
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: $color-secondary;
+      grid-column: 2 / span 2;
+    }
 }
 
 .logo{
@@ -19,6 +27,8 @@
   grid-column: 3 / span 1;
   align-self: center;
   justify-self: right;
+
+  
 
   & > ul{
     display: flex;
@@ -64,10 +74,4 @@
       }
     }
   }
-}
-
-.line{
-  background-color: #fff;
-  grid-column: 2 / span 2;
-  height: .15rem;
 }
