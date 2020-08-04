@@ -38,7 +38,7 @@ body{
                         100vh    //for story
                         repeat(3, min-content); //for education, expertisies and portfolio
     
-    grid-template-columns:  [full-start] 17rem [center-start] //filling the initial space in the viewport width
+    grid-template-columns:  [full-start] 30vw [center-start] //filling the initial space in the viewport width
                             repeat(8, [col-start] minmax(min-content, 14rem) [col-end])
-                            [center-end] 17rem [full-end]; //filling the rest in the end of viewport width
+                            [center-end] 30vw [full-end]; //filling the rest in the end of viewport width
 }

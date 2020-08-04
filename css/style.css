@@ -18,7 +18,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 18vh 73vh 10vh 100vh repeat(3, min-content);
-  grid-template-columns: [full-start] 17rem [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 17rem [full-end]; }
+  grid-template-columns: [full-start] 30vw [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 30vw [full-end]; }
 
 .header {
   grid-column: full-start / full-end;
