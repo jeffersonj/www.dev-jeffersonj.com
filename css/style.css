@@ -1,3 +1,11 @@
+.heading-h1 {
+  font-size: 2rem;
+  font-weight: 700; }
+
+.heading-h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem; }
+
 *,
 *::after,
 *::before {
@@ -87,8 +95,30 @@ body {
     background-position: top;
     margin: 1.5rem 8rem 1.5rem 2rem; }
   .about__content {
-    background-color: #dddddd;
-    grid-column: 3 / span 1; }
+    grid-column: 3 / span 1;
+    margin: 1.5rem 0 1.5rem 0;
+    color: #F2F2F2; }
+  .about__text {
+    font-size: 1.4rem;
+    margin-top: 3rem; }
+  .about .btn-primary {
+    margin-top: 8rem;
+    padding: 1.8rem 3rem;
+    background-color: #F2F2F2;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+    transition: all .2s; }
+    .about .btn-primary:hover {
+      background-color: #F2F2F2;
+      cursor: pointer;
+      transform: translateY(-0.3rem);
+      box-shadow: -0.3rem 0.8rem 2rem rgba(242, 242, 242, 0.2); }
+    .about .btn-primary:active {
+      transform: translateY(0.1rem);
+      box-shadow: -0.1rem 0.1rem 2.5rem rgba(242, 242, 242, 0.2); }
 
 .social {
   grid-column: full-start / full-end;

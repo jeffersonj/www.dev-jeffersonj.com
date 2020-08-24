@@ -11,11 +11,44 @@
         background-size: cover;
         background-position: top;
         margin: 1.5rem 8rem 1.5rem 2rem;
-        
     }
 
     &__content{
-        background-color: rgb(221, 221, 221);
         grid-column: 3 / span 1;
+        margin: 1.5rem 0 1.5rem 0;
+
+        color: $color-font-2;
     }
+    
+    &__text{
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }
+
+    .btn-primary{
+        margin-top: 8rem;
+        padding: 1.8rem 3rem;
+        background-color: $color-font-2;
+        outline: none;
+        border: none;
+        border-radius: 2px;
+        font-size: 1.4rem;
+        letter-spacing: .2rem;
+        transition: all .2s;
+
+        &:hover{
+            background-color: $color-font-2;
+            cursor: pointer;
+            transform: translateY(-.3rem);
+            box-shadow: -.3rem .8rem 2rem rgba($color-font-2, .2);
+
+        }
+
+        &:active{
+            transform: translateY(.1rem);
+            box-shadow: -.1rem .1rem 2.5rem rgba($color-font-2, .2);
+        }
+
+    }
+
 }
