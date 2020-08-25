@@ -35,7 +35,7 @@ body{
     grid-template-rows: 18vh    //for header navigation
                         73vh    //for about
                         10vh    //for social
-                        100vh    //for story
+                        80vh    //for story
                         repeat(3, min-content); //for education, expertisies and portfolio
     
     grid-template-columns:  [full-start] 30vw [center-start] //filling the initial space in the viewport width

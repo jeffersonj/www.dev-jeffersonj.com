@@ -9,14 +9,23 @@
     grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem;
 
     &__content{
-            background-color: rgb(221, 221, 221);
-            grid-column: 2 / span 1;
+        //background-color: rgb(221, 221, 221);
+        grid-column: 2 / span 1;
+        padding: 5rem 3rem;
     }
 
     &__photo{
         background-color: rgb(182, 182, 182);
         grid-column: 3 / span 1;
+
+        background-image: url(../img/story_photo.jpg);
+        background-size: cover;
+        background-position: top;
+        margin: 5rem 3rem;
     }
 
-    
+    &__text{
+        font-size: 1.4rem;
+        margin-top: 3rem;
+    }    
 }

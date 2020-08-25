@@ -1,4 +1,31 @@
 .skills{
-    background-color: #ccaeae;
-    grid-column: center-start / center-end;
+    //background-color: #ccaeae;
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem;
+
+    &__content, .heading-h1{
+        grid-column: 2 / 4;
+        padding: 3.5rem;
+    }
+
+    &__content{
+        display: grid;
+        //turning on this column full-responsive without media-queries
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-gap: 6rem;
+        margin-bottom: 6rem;
+
+        img{
+            justify-self: center;   //centering svg icon in cross axis
+            height: 9rem;
+            transition: all .3s;
+        }
+    }
+
+    img:hover{
+        transform: scale(1.08);
+        cursor: pointer;
+    }
 }
