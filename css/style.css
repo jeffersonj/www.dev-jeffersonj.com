@@ -25,7 +25,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 18vh 73vh 10vh 100vh repeat(3, min-content);
+  grid-template-rows: 18vh 73vh 10vh 80vh repeat(3, min-content);
   grid-template-columns: [full-start] 30vw [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 30vw [full-end]; }
 
 .header {
@@ -183,19 +183,44 @@ body {
   display: grid;
   grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem; }
   .story__content {
-    background-color: #dddddd;
-    grid-column: 2 / span 1; }
+    grid-column: 2 / span 1;
+    padding: 5rem 3rem; }
   .story__photo {
     background-color: #b6b6b6;
-    grid-column: 3 / span 1; }
+    grid-column: 3 / span 1;
+    background-image: url(../img/story_photo.jpg);
+    background-size: cover;
+    background-position: top;
+    margin: 5rem 3rem; }
+  .story__text {
+    font-size: 1.4rem;
+    margin-top: 3rem; }
 
 .education {
   background-color: palegoldenrod;
   grid-column: center-start / center-end; }
 
 .skills {
-  background-color: #ccaeae;
-  grid-column: center-start / center-end; }
+  grid-column: full-start / full-end;
+  display: grid;
+  grid-template-columns: 17rem repeat(2, minmax(25rem, 1fr)) 17rem; }
+  .skills__content, .skills .heading-h1 {
+    grid-column: 2 / 4;
+    padding: 3.5rem; }
+  .skills__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 6rem;
+    margin-bottom: 6rem; }
+    .skills__content a {
+      justify-self: center;
+      align-self: center; }
+    .skills__content img {
+      height: 9rem;
+      transition: all .3s; }
+  .skills img:hover {
+    transform: scale(1.08);
+    cursor: pointer; }
 
 .portfolio {
   background-color: #747474;
