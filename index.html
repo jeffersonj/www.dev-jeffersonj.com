@@ -18,9 +18,10 @@
       <div class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Story</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Education & Experience</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+          <li class="nav__item"><a href="#story" class="nav__link">Story</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
           <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
         </ul>
       </div>
@@ -106,7 +107,7 @@
       </ul>
     </section>
 
-    <section class="story">
+    <section class="story" id="story">
       <div class="story__content">
         <div class="heading-h1">
           My Story
@@ -127,11 +128,11 @@
       </div>
     </section>
 
-    <section class="education">
-      Education
+    <section class="experience" id="experience">
+      Experience
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="heading-h1">
         My Expertisies
       </div>
@@ -174,8 +175,56 @@
       </div>
     </section>
 
-    <section class="portfolio">
-      Portfolio
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__content">
+        <!-- Flickity HTML init -->
+        <div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell gallery-cell--1">
+            <div class="gallery__box">
+              <div class="gallery__box-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quis aliquid quo magnam ex, ad eaque aliquam voluptatibus excepturi, illo inventore dolor exercitationem alias consequatur! Tempore ipsum doloremque temporibus esse?
+                <a class="gallery__box-link" href="#">See on live &#x2192;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell gallery-cell--2">
+            <div class="gallery__box">
+              <div class="gallery__box-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quis aliquid quo magnam ex, ad eaque aliquam voluptatibus excepturi, illo inventore dolor exercitationem alias consequatur! Tempore ipsum doloremque temporibus esse?
+                <a class="gallery__box-link" href="#">See on live &#x2192;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell gallery-cell--3">
+            <div class="gallery__box">
+              <div class="gallery__box-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quis aliquid quo magnam ex, ad eaque aliquam voluptatibus excepturi, illo inventore dolor exercitationem alias consequatur! Tempore ipsum doloremque temporibus esse?
+                <a class="gallery__box-link" href="#">See on live &#x2192;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell gallery-cell--4">
+            <div class="gallery__box">
+              <div class="gallery__box-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quis aliquid quo magnam ex, ad eaque aliquam voluptatibus excepturi, illo inventore dolor exercitationem alias consequatur! Tempore ipsum doloremque temporibus esse?
+                <a class="gallery__box-link" href="#">See on live &#x2192;</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell gallery-cell--5">
+            <div class="gallery__box">
+              <div class="gallery__box-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quis aliquid quo magnam ex, ad eaque aliquam voluptatibus excepturi, illo inventore dolor exercitationem alias consequatur! Tempore ipsum doloremque temporibus esse?
+                <a class="gallery__box-link" href="#">See on live &#x2192;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact">
@@ -231,4 +280,5 @@
       </span>
     </footer>
   </body>
+  <script type="text/javascript" src="/node_modules/flickity/dist/flickity.pkgd.js"></script>
 </html>
